@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pl-PL">
+<head>
+    <meta charset="UTF-8">
+    <title>CodersLab</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <h2>Sprawdź jakie święto było tego dnia w Polsce:</h2>
+    <select name="holiday-dates" id="selected-pl"></select>
+    <div>
+        <h1 id="holiday-pl"></h1>
+    </div>
+    <h2>Sprawdź jakie święto było tego dnia w Niemczech:</h2>
+    <select name="holiday-dates" id="selected-de"></select>
+    <div>
+        <h1 id="holiday-de"></h1>
+    </div>
+    <h2>Sprawdź jakie święto było tego dnia we Francji:</h2>
+    <select name="holiday-dates" id="selected-fr"></select>
+    <div>
+        <h1 id="holiday-fr"></h1>
+    </div>
+    <p>Jak to działa? Z bazy świąt państwowych różnych krajów znajdujących się pod adresem <a href="https://holidayapi.com/" target="_blank">https://holidayapi.com/</a> generuję swój klucz API. Za pomocą funkcji AJAX wczytuję wszystkie daty świąt, zgodnie z wybranymi przeze mnie krajami oraz rokiem, a po wyborze daty wczytuje się odpowiadające jej święto. 
+</p>
+</body>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script> 
+<script src="js/app.js"></script>      
+</html>
